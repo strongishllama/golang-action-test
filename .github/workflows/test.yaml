@@ -11,6 +11,9 @@ on:
 jobs:
   test:
     name: Test
-    uses: strongishllama/golang-action@main
-    with:
-      example-input: Hello world!
+    runs-on: ubuntu-latest
+    steps:
+      - name: Golang Action
+        uses: strongishllama/golang-action@main
+        with:
+          example-input: Hello world!
