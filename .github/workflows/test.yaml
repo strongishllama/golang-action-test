@@ -1,0 +1,16 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Test
+    uses: strongishllama/golang-action@main
+    with:
+      example-input: Hello world!
